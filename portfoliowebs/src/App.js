@@ -18,11 +18,14 @@ import ProjectPage from "./components/ProjectPage";
 import BlogPage from "./components/BlogPage";
 import Addproject from "./components/Addproject";
 import Addblog from "./components/Addblog";
+import {Provider} from "./Context";
+import Allprojects from "./components/Allprojects";
 
 function App() {
   AOS.init();
   return (
-    <BrowserRouter>
+    <Provider>
+      <BrowserRouter>
       <Navbar />
       <Routes>
         <Route
@@ -39,6 +42,7 @@ function App() {
             <Aboutme />,
           ]}
         />
+        <Route path ="allprojects" element={<Allprojects/>}/>
         <Route path="/contact" element={<Contact />} />
         <Route path="/recommendation" element={<Writerecommendation />} />
         <Route path="/project/add" element={<Addproject />} />
@@ -46,9 +50,12 @@ function App() {
         <Route path="/blog/add" element={<Addblog/>} />
         <Route path="/blog/:id" element={<BlogPage />} />
         <Route path="*" element={<Notfound />} />
+      
       </Routes>
       <Footer />
-    </BrowserRouter>
+      </BrowserRouter>
+    </Provider>
+    
   );
 }
 export default App;
