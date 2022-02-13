@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Consumer } from "../Context";
+import {v4 as uuid} from "uuid";
 
 class Writerecommendation extends Component {
   state = {
@@ -17,7 +19,7 @@ class Writerecommendation extends Component {
     });
   };
 
-  onSubmit = (event) => {
+  onSubmit = (Handler, event) => {
     event.preventDefault();
     const { name } = this.state;
 
@@ -33,82 +35,98 @@ class Writerecommendation extends Component {
         submitMessageTextColor: "text-danger",
       });
     }
+    const newRecommendation = {
+      id:uuid(),
+      name:this.state.name,
+      company: this.state.company,
+      designation: this.state.designation,
+      message: this.state.recommendation,
+  }
+
+  Handler("Add_Reccomendation",newRecommendation);
   };
 
   render() {
-    const { submitMessageTextColor, submitMessage } = this.state;
     return (
-      <div
-        className="container my-5"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        <h1 className="font-weight-light text-center py-5">
-          What would you<span className="text-info"> Recommend</span> 
-        </h1>
-        <div className="row justify-content-center">
-          <div className="col-11 col-lg-5">
-            <form onSubmit={this.onSubmit}>
-              <div className="form-group">
-                <label htmlFor="name">Name *</label>
-                <input
-                  type="text"
-                  name="name"
-                  className="form-control"
-                  onChange={this.onChange}
-                />
+      <Consumer>
+        {(value) => {
+          const { submitMessageTextColor, submitMessage } = this.state;
+          const {Handler} = value;
+          return (
+            <div
+              className="container my-5"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <h1 className="font-weight-light text-center py-5">
+                What would you<span className="text-info"> Recommend</span>
+              </h1>
+              <div className="row justify-content-center">
+                <div className="col-11 col-lg-5">
+                  <form onSubmit={this.onSubmit.bind(this, Handler)}>
+                    <div className="form-group">
+                      <label htmlFor="name">Name *</label>
+                      <input
+                        type="text"
+                        name="name"
+                        className="form-control"
+                        onChange={this.onChange}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="email">Email *</label>
+                      <input
+                        type="email"
+                        name="email"
+                        className="form-control"
+                        onChange={this.onChange}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="company">Company / Institution *</label>
+                      <input
+                        type="text"
+                        name="company"
+                        className="form-control"
+                        onChange={this.onChange}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="designation">Designation*</label>
+                      <input
+                        type="text"
+                        name="designation"
+                        className="form-control"
+                        onChange={this.onChange}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="recommendation">Recommendation*</label>
+                      <textarea
+                        className="form-control"
+                        name="recommendation"
+                        rows="5"
+                        onChange={this.onChange}
+                      ></textarea>
+                    </div>
+                    <button
+                      type="submit"
+                      className="btn btn-info float-right"
+                      style={{ backgroundColor: "red" }}
+                    >
+                      Lot's of love
+                    </button>
+                  </form>
+                </div>
               </div>
-              <div className="form-group">
-                <label htmlFor="email">Email *</label>
-                <input
-                  type="email"
-                  name="email"
-                  className="form-control"
-                  onChange={this.onChange}
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="company">Company / Institution *</label>
-                <input
-                  type="text"
-                  name="company"
-                  className="form-control"
-                  onChange={this.onChange}
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="designation">Designation*</label>
-                <input
-                  type="text"
-                  name="designation"
-                  className="form-control"
-                  onChange={this.onChange}
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="recommendation">Recommendation*</label>
-                <textarea
-                  className="form-control"
-                  name="recommendation"
-                  rows="5"
-                  onChange={this.onChange}
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="btn btn-info float-right"
-                style={{ backgroundColor: "red" }}
-              >
-                Lot's of love
-              </button>
-            </form>
-          </div>
-        </div>
 
-        <div className="py-5 mx-2 text-center">
-          <h5 className={submitMessageTextColor}>{submitMessage}</h5>
-        </div>
-      </div>
+              <div className="py-5 mx-2 text-center">
+                <h5 className={submitMessageTextColor}>{submitMessage}</h5>
+              </div>
+            </div>
+          );
+        }}
+      </Consumer>
     );
   }
 }

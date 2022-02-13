@@ -4,7 +4,35 @@ const Context = React.createContext();
 // This is the boiler plate code for setting up context api for any app
 
 export class Provider extends Component {
+  //this will add the newproject into the state and spread
+  // the other projects already present in the state this happens with the help of ... i.e spread fxn.
+  Handler = (action, newObject) => {
+    switch (action) {
+      case "Add_Project":
+        this.setState({
+          projects: [newObject, ...this.state.projects],
+        });
+        break;
+
+      case "Add_Blog":
+        this.setState({
+          projects: [newObject, ...this.state.blogs],
+        });
+        break;
+
+      case "Add_Recommendation":
+        this.setState({
+          projects: [newObject, ...this.state.recommendations],
+        });
+        break;
+
+      default:
+        break;
+    }
+  };
   state = {
+    Handler: this.Handler, //as we are passing the entire state to the other consumers
+    //therefore to access the addprojectHandler method we need to pass it into the state.
     skills: [
       {
         id: 1,
@@ -78,6 +106,7 @@ export class Provider extends Component {
         imageUrl:
           "https://codecanyon.img.customer.envatousercontent.com/files/247419826/Inline_Preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=246d8fecb8b004dc0ac19070ea582e18",
         excerpt: "This project is about...",
+        body: "body 1",
       },
       {
         id: 2,
@@ -85,6 +114,7 @@ export class Provider extends Component {
         imageUrl:
           "http://web.cse.ohio-state.edu/~wang.3602/courses/cse3541-2017-spring/project_proposal/Adrien_Lindner/flappyBird.jpg",
         excerpt: "This project is about...",
+        body: "body 2",
       },
       {
         id: 3,
@@ -92,6 +122,7 @@ export class Provider extends Component {
         imageUrl:
           "https://www.powertransformernews.com/wp-content/uploads/2021/02/code-5113374_640.jpg",
         excerpt: "This project is about...",
+        body: "body 3",
       },
       {
         id: 4,
@@ -99,6 +130,7 @@ export class Provider extends Component {
         imageUrl:
           "https://www.alliedmarketresearch.com/assets/sampleimages/predictive-analytics-in-healthcare-market-1579610537.jpeg",
         excerpt: "This project is about...",
+        body: "body 4",
       },
     ],
     recommendations: [
@@ -137,21 +169,21 @@ export class Provider extends Component {
         title: "Blog 1",
         excerpt: "This blog is about..",
         imageUrl:
-          "https://neilpatel.com/wp-content/uploads/2017/02/blogging.jpg",
+          "https://global-edtech.com/wp-content/uploads/2021/01/Coding-Integrating-Computer-Science-within-other-subjects.png",
       },
       {
         id: 2,
         title: "Blog 2",
         excerpt: "This blog is about..",
         imageUrl:
-          "https://neilpatel.com/wp-content/uploads/2017/02/blogging.jpg",
+          "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/124651659/original/db92a216c016a09556ecea240df950f19faad827/help-you-in-computer-science-and-mathematics.jpeg",
       },
       {
         id: 3,
         title: "Blog 3",
         excerpt: "This blog is about..",
         imageUrl:
-          "https://neilpatel.com/wp-content/uploads/2017/02/blogging.jpg",
+          "https://www.teahub.io/photos/full/109-1094444_background-computer-science.jpg",
       },
     ],
   };
