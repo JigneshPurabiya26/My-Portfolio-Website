@@ -16,13 +16,13 @@ export class Provider extends Component {
 
       case "Add_Blog":
         this.setState({
-          projects: [newObject, ...this.state.blogs],
+          blogs: [newObject, ...this.state.blogs],
         });
         break;
 
       case "Add_Recommendation":
         this.setState({
-          projects: [newObject, ...this.state.recommendations],
+          recommendations: [newObject, ...this.state.recommendations],
         });
         break;
 
@@ -168,6 +168,7 @@ export class Provider extends Component {
         id: 1,
         title: "Blog 1",
         excerpt: "This blog is about..",
+        body: "body 1",
         imageUrl:
           "https://global-edtech.com/wp-content/uploads/2021/01/Coding-Integrating-Computer-Science-within-other-subjects.png",
       },
@@ -175,6 +176,7 @@ export class Provider extends Component {
         id: 2,
         title: "Blog 2",
         excerpt: "This blog is about..",
+        body: "body 2",
         imageUrl:
           "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/124651659/original/db92a216c016a09556ecea240df950f19faad827/help-you-in-computer-science-and-mathematics.jpeg",
       },
@@ -182,6 +184,7 @@ export class Provider extends Component {
         id: 3,
         title: "Blog 3",
         excerpt: "This blog is about..",
+        body: "body 1",
         imageUrl:
           "https://www.teahub.io/photos/full/109-1094444_background-computer-science.jpg",
       },
