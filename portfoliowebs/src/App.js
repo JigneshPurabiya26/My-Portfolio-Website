@@ -19,6 +19,8 @@ import Addblog from "./components/Addblog";
 import { Provider } from "./Context";
 import Allprojects from "./components/Allprojects";
 import Allblogs from "./components/Allblogs";
+import ProjectPage from "./components/ProjectPage";
+import BlogPage from "./components/BlogPage";
 
 function App() {
   AOS.init();
@@ -42,7 +44,9 @@ function App() {
             ]}
           />
           <Route path="/allprojects" element={<Allprojects />} />
+          <Route path="/project/:id" element={<ProjectPage/>}/>
           <Route path="/allblogs" element={<Allblogs />} />
+          <Route path="/blog/:id" element={<BlogPage/>}/>
           <Route path="/contact" element={<Contact />} />
           <Route path="/recommendation" element={<Writerecommendation />} />
           <Route path="/project/addproject" element={<Addproject />} />
