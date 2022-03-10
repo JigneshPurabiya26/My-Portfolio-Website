@@ -12,9 +12,9 @@ export default function Skills(props) {
         }
     }
   return (
-    <div>
+    <div >
       <img
-        className="rounded-circle"
+        className="img1 rounded-circle"
         src={imageUrl}
         alt={name}
         style={{width: "85px", height: "85px"}}
