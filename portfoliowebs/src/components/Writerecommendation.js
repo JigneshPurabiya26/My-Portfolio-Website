@@ -43,14 +43,16 @@ class Writerecommendation extends Component {
       message: this.state.recommendation,
   }
 
-  Handler("Add_Reccomendation",newRecommendation);
+  Handler("Add_Recommendation",newRecommendation);
   };
 
   render() {
     return (
       <Consumer>
         {(value) => {
-          const { submitMessageTextColor, submitMessage } = this.state;
+          const { 
+            submitMessageTextColor,
+             submitMessage } = this.state;
           const {Handler} = value;
           return (
             <div
