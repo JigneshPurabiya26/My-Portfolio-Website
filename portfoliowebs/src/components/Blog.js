@@ -11,9 +11,9 @@ function blog() {
         return (
           <div id="blog" className="container text-center my-3" data-aos="fade-up" data-aos-duration="1000">
             <h1 className="font-weight-light">
-              My <span className="text-info">Blogs </span>
+              <span className="text-info">Certification Courses </span>
             </h1>
-            <div className="lead">These are some blogs that I have written.</div>
+            {/* <div className="lead">These are some blogs that I have written.</div> */}
             <div className="row my-5 py3">
               {
               blogs.slice(0,3).map((blog)=> (
@@ -26,7 +26,7 @@ function blog() {
             <div className="my-5">
               <Link to="/allblogs" className="text-dark text-right">
                 <h5>
-                  Read all my Blogs
+                  More Courses
                   <i className="fas fa-arrow-right align-middle"></i>
                 </h5>
               </Link>
