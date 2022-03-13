@@ -40,7 +40,7 @@
 @media only screen and (min-width:992px){
   .card:hover{
     transition: transform .2s;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   .img1:hover{
     transition: transform .2s;
