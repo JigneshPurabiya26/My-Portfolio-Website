@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -7,7 +7,8 @@ function Footer() {
       <div
         className="contianer-fluid text-center mx-0"
         style={{ backgroundColor: "black" }}
-        data-aos="fade-up" data-aos-duration="1000"
+        data-aos="fade-up"
+        data-aos-duration="1000"
       >
         <div className="py-5">
           <h2 className="text-light">Interested in working with me?</h2>
@@ -36,25 +37,25 @@ function Footer() {
           </div>
           <div className="col-12 col-md-4">
             <p className="text-light text-justify pl-3 py-3">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Repellendus inventore quia, id unde, quod ab mollitia distinctio
-              ratione aliquid voluptates quaerat ducimus, aliquam numquam? Totam
-              quam iusto in quis neque nesciunt vero architecto accusamus
-              aliquid magnam. Suscipit, aliquid aperiam veritatis sapiente
-              doloremque optio? Soluta dolorem optio hic laborum quo repellat
-              consequuntur. Laboriosam quisquam officia provident!
+              This is my portfolio website, where you will find the projects
+              that I have created from the 1<sup>st</sup> year of my engineering
+              till date. Here I have also showcased the skill that I possess and
+              the Certification Courses that I have completed.
             </p>
           </div>
           <div className="col-12 col-md-4 py-3">
             <h5 className="text-info pb-4">Social</h5>
-            <a href="/" style={{textDecoration:"none"}}>
-            <i className="fab fa-linkedin fa-2x text-light d-block mb-2"></i>
+            <a
+              href="https://www.linkedin.com/in/jignesh-purabiya-a166971ba/"
+              style={{ textDecoration: "none" }}
+            >
+              <i className="fab fa-linkedin fa-2x text-light d-block mb-2"></i>
             </a>
-            <a href="/" style={{textDecoration:"none"}}>
+            <a
+              href="https://github.com/JigneshPurabiya26"
+              style={{ textDecoration: "none" }}
+            >
               <i className="fab fa-github-square fa-2x text-light d-block mb-2"></i>
-            </a>
-            <a href="/" style={{textDecoration:"none"}}>
-              <i className="fas fa-envelope fa-2x text-light  d-block mb-2 "></i>
             </a>
           </div>
         </div>
