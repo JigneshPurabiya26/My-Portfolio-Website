@@ -37,64 +37,56 @@ export class Provider extends Component {
       {
         id: 1,
         name: "HTML5",
-        imageUrl:
-          "https://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png",
+        imageUrl:require("././assets/Other-html-5-icon.png").default,
         starsTotal: 3,
         starsActive: 3,
       },
       {
         id: 2,
         name: "CSS3",
-        imageUrl:
-          "https://cdn.iconscout.com/icon/free/png-256/css-37-226088.png",
+        imageUrl:require("././assets/css-37-226088.png").default,
         starsTotal: 3,
         starsActive: 2,
       },
       {
         id: 3,
         name: "Javascript",
-        imageUrl:
-          "https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png",
+        imageUrl:require("././assets/js1.webp").default,
         starsTotal: 3,
         starsActive: 3,
       },
       {
         id: 4,
         name: "Bootstrap 4",
-        imageUrl:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvT6kmy1pgSNCdpmdD8vwVS01C5YXKAh9UM1OARroY-z38AhqcWwnOTMk4E4T4aNF7j5s&usqp=CAU",
+        imageUrl:require("././assets/bootstrap.png").default,        
         starsTotal: 3,
         starsActive: 3,
       },
       {
         id: 5,
         name: "React",
-        imageUrl:
-          "https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png",
+        imageUrl:require("././assets/react.webp").default,
         starsTotal: 3,
         starsActive: 2,
       },
       {
         id: 6,
         name: "MySQL",
-        imageUrl:
-          "https://pbs.twimg.com/profile_images/621577553376100352/lvR3kClO_400x400.png",
+        imageUrl: require("././assets/sql.png").default,
         starsTotal: 3,
         starsActive: 2,
       },
       {
         id: 7,
         name: "Python",
-        imageUrl:
-          "https://cdn.iconscout.com/icon/free/png-256/python-2-226051.png",
+        imageUrl:require("././assets/python.webp").default,
         starsTotal: 3,
         starsActive: 2,
       },
       {
         id: 8,
         name: "Flask",
-        imageUrl:
-          "https://nyxwolves.com/assets/images/services-icons-tech/ai/1.png",
+        imageUrl:require("././assets/flask.png").default,
         starsTotal: 3,
         starsActive: 2,
       },
@@ -103,32 +95,28 @@ export class Provider extends Component {
       {
         id: 1,
         title: "Hotel Management System",
-        imageUrl:
-          "https://codecanyon.img.customer.envatousercontent.com/files/247419826/Inline_Preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=246d8fecb8b004dc0ac19070ea582e18",
+        imageUrl:require("././assets/Inline_Preview.jpg").default,
         excerpt: "This project is about...",
         body: "body 1",
       },
       {
         id: 2,
         title: "Flappy Bird Game",
-        imageUrl:
-          "http://web.cse.ohio-state.edu/~wang.3602/courses/cse3541-2017-spring/project_proposal/Adrien_Lindner/flappyBird.jpg",
+        imageUrl:require("././assets/flappyBird.jpg").default,
         excerpt: "This project is about...",
         body: "body 2",
       },
       {
         id: 3,
         title: "Multilingual IDE",
-        imageUrl:
-          "https://www.powertransformernews.com/wp-content/uploads/2021/02/code-5113374_640.jpg",
+        imageUrl:require("././assets/IDE.jpg").default,
         excerpt: "This project is about...",
         body: "body 3",
       },
       {
         id: 4,
         title: "Health insurance cost prediction",
-        imageUrl:
-          "https://www.alliedmarketresearch.com/assets/sampleimages/predictive-analytics-in-healthcare-market-1579610537.jpeg",
+        imageUrl:require("././assets/HC.jpeg").default,
         excerpt: "This project is about...",
         body: "body 4",
       },
@@ -183,8 +171,7 @@ export class Provider extends Component {
         title: "Full Stack Web Development",
         excerpt: "Unschool Web development course",
         body: "body 1",
-        imageUrl:
-          "https://www.teahub.io/photos/full/109-1094444_background-computer-science.jpg",
+        imageUrl:require("././assets/Full-Stack-Developer.webp").default,
       },
     ],
   };
