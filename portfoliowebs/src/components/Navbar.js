@@ -26,7 +26,7 @@ function Navbar(){
             <a href="/#projects" className="nav-item nav-link text-dark h6 mx-1 "> Projects </a>
           </div>
           <div className="navbar-nav">
-            <a href="/#blog" className="nav-item nav-link text-dark h6 mx-1 " > Blogs </a>
+            <a href="/#blog" className="nav-item nav-link text-dark h6 mx-1 " > Courses </a>
           </div>
           <div className="navbar-nav">
             <a href="/#aboutus" className="nav-item nav-link text-dark h6 mx-1 " > About me </a>
