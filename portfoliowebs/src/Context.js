@@ -85,6 +85,13 @@ export class Provider extends Component {
       },
       {
         id: 8,
+        name: "Tableau",
+        imageUrl:require("././assets/Tableau.jpg").default,
+        starsTotal: 3,
+        starsActive: 2,
+      },
+      {
+        id: 9,
         name: "Flask",
         imageUrl:require("././assets/flask.png").default,
         starsTotal: 3,
@@ -168,10 +175,31 @@ export class Provider extends Component {
       },
       {
         id: 3,
+        title: "Regular Expression",
+        excerpt: "Coursera RegEx Project",
+        body: "body 3",
+        imageUrl: require('././assets/RegEx.png').default,
+      },
+      {
+        id: 4,
+        title: "ML Bootcamp",
+        excerpt: "DevTown ML Bootcamp",
+        body: "body 4",
+        imageUrl: require('././assets/Devtown.png').default,
+      },
+      {
+        id: 5,
         title: "Full Stack Web Development",
         excerpt: "Unschool Web development course",
-        body: "body 1",
+        body: "body 5",
         imageUrl:require("././assets/Full-Stack-Developer.webp").default,
+      },
+      {
+        id: 6,
+        title: "MLOps Certification",
+        excerpt: "Udemy MLOps Certification",
+        body: "body 6",
+        imageUrl:require("././assets/MLops.png").default,
       },
     ],
   };
