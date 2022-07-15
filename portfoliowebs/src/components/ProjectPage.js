@@ -20,7 +20,7 @@ export default function ProjectPage() {
                         {title}
                     </h1>
                     <ReactMarkdown children={body} className="container w-75 font-weight-light-normal text-justify" />
-                    <ReactMarkdown children={link} remarkPlugins={[remarkGfm]} className="container w-75 font-weight-light-normal"/>
+                    <ReactMarkdown children={link} remarkPlugins={[remarkGfm]} className="container w-75 flex-nowrap font-weight-light-normal"/>
                 </div>
             )
         }}
