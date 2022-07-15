@@ -21,12 +21,14 @@ import Allprojects from "./components/Allprojects";
 import Allblogs from "./components/Allblogs";
 import ProjectPage from "./components/ProjectPage";
 import BlogPage from "./components/BlogPage";
+import Scroll from "./components/Scroll";
 
 function App() {
   AOS.init();
   return (
     <Provider>
       <BrowserRouter>
+        <Scroll/>
         <Navbar />
         <Routes>
           <Route
