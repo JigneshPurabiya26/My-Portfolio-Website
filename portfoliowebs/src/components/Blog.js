@@ -26,7 +26,7 @@ function blog() {
             <div className="my-5">
               <Link to="/allblogs" className="text-dark text-right">
                 <h5>
-                  More Courses
+                  More Certificates
                   <i className="fas fa-arrow-right align-middle"></i>
                 </h5>
               </Link>
