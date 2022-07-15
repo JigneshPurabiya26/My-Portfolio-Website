@@ -8,7 +8,7 @@ export default function ProjectCard(props) {
     return (
         <div className={location}>
         <img
-          className="card-image-top"
+          className="card-image-top border border-dark"
           src={imageUrl}
           alt={title}
         />

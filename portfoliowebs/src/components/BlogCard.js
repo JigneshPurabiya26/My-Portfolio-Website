@@ -7,7 +7,7 @@ export default function BlogCard(props) {
     let location = history.pathname==="/allblogs"?"bc card boxShadow h-100 allblogs ":"bc card boxShadow h-100"
     return (
         <div className={location}>
-        <img className="card-image-top" src={imageUrl} alt="" />
+        <img className="card-image-top border border-dark" src={imageUrl} alt="" />
         <div className="card-body">
           <h4 className="card-title">{title}</h4>
           <p className="card-text">{excerpt}</p>
