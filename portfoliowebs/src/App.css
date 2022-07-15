@@ -54,3 +54,20 @@
     transform: scale(1.2);
   }
 }
+@media only screen and (min-width:992px){
+  .bc:hover{
+    transition: transform .2s;
+    transform: scale(1.1);
+  }
+  .allblogs:hover{
+    transform: scale(1);
+  }
+  .allblogs{
+    width: 85%;
+    margin: auto;
+  }
+  .img2:hover{
+    transition: transform .2s;
+    transform: scale(1.2);
+  }
+}
