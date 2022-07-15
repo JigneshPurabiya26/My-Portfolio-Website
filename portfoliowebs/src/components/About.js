@@ -16,7 +16,7 @@ function Aboutme() {
           <h4>How can I help you?</h4>
           <p className="text-justify px-5">
             As displayed in Technology Stack section I can design and develop a
-            range of websites using the tools mentioned in it.
+            range of websites using the tools mentioned in it, create a variety of machine learning projects, perform Web Scraping using different python libraries and last but not the least I create different visualizations using tools like Tableau and PoweBI.
           </p>
         </div>
         <div className="col-12 col-md-6">
@@ -37,15 +37,6 @@ function Aboutme() {
             you to keep the pace up with the professionals in the IT fraternity.
           </p>
         </div>
-        {/* <div className="col-12 col-md-6">
-          <h4>How can I help you?</h4>
-          <p className="text-justify px-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
-            itaque sapiente officia libero. Omnis doloremque, amet provident
-            reiciendis quasi ducimus harum? Nostrum, distinctio nam modi magnam
-            numquam reiciendis quas fuga.
-          </p>
-        </div> */}
       </div>
     </div>
   );

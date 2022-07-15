@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 function Footer() {
   return (
     <footer>
@@ -48,14 +47,23 @@ function Footer() {
             <a
               href="https://www.linkedin.com/in/jignesh-purabiya-a166971ba/"
               style={{ textDecoration: "none" }}
+              target="_blank"
             >
               <i className="fab fa-linkedin fa-2x text-light d-block mb-2"></i>
             </a>
             <a
               href="https://github.com/JigneshPurabiya26"
               style={{ textDecoration: "none" }}
+              target="_blank"
             >
               <i className="fab fa-github-square fa-2x text-light d-block mb-2"></i>
+            </a>
+            <a
+              href="https://public.tableau.com/app/profile/jignesh.purabiya"
+              style={{ textDecoration: "none" }}
+              target="_blank"
+            >
+              <img src={require('../assets/tab.png').default}  className="w-25"/>
             </a>
           </div>
         </div>

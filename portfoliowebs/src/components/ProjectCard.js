@@ -3,8 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 
 export default function ProjectCard(props) {
     const history= useLocation();
-    let location = history.pathname==="/allprojects"?"card boxShadow h-100 allproject ":"card boxShadow h-100"
-    const{id,title,excerpt,imageUrl}=props.project;
+    let location = history.pathname==="/allprojects"?"card boxShadow  h-100 allproject ":"card boxShadow h-100"
+    const{id,title,excerpt,imageUrl}=props.project; 
     return (
         <div className={location}>
         <img
