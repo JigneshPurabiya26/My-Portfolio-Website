@@ -118,7 +118,7 @@ export class Provider extends Component {
         title: "Multilingual IDE",
         imageUrl:require("././assets/Ide.jpg").default,
         excerpt: "This project is about...",
-        body: "body 3",
+        body: "Multilingual IDE",
       },
       {
         id: 4,
