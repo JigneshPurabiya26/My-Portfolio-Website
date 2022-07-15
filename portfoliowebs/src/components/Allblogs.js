@@ -11,7 +11,7 @@ export default function Allblogs() {
         return (
           <div className="container text-center my-5 py-5">
             <h1 className="font-weight-light py-5">
-              All my <span className="text-info">Blogs</span>
+              All my <span className="text-info">Certifications</span>
             </h1>
             <div className="row my-4 pt-4">
               {blogs.map((blog) => (
@@ -21,7 +21,7 @@ export default function Allblogs() {
               ))}
             </div>
             <Link to="/blog/addblog" className="ml-auto mx-3">
-              <button className="btn btn-outline-info ">Add Blog</button>
+              <button className="btn btn-outline-info ">Add More</button>
             </Link>
           </div>
         );

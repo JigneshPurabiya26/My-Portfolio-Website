@@ -1,10 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
 
 export default function BlogCard(props) {
     const{id,title,excerpt,imageUrl}=props.blog;
+    const history = useLocation();
+    let location = history.pathname==="/allblogs"?"bc card boxShadow h-100 allblogs ":"bc card boxShadow h-100"
     return (
-        <div className="card boxShadow h-100">
+        <div className={location}>
         <img className="card-image-top" src={imageUrl} alt="" />
         <div className="card-body">
           <h4 className="card-title">{title}</h4>
