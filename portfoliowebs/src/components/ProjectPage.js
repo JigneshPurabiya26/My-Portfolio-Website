@@ -13,7 +13,7 @@ export default function ProjectPage() {
             return (
                 <div className='container py-5 my-5 markdown'>
                     <div className="justify-content-center">
-                        <img src={imageUrl} alt={title} className="w-100"/>
+                        <img src={imageUrl} alt={title} className="w-75 m-auto rounded border border-dark border-5"/>
                     </div>
                     <h1 className="font-weight-light text-center my-5">
                         {title}
