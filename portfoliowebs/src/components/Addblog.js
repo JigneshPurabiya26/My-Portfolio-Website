@@ -68,7 +68,7 @@ export default class Addblog extends Component {
           return (
             <div className="container-fluid my-5 py-5">
               <h1 className="text-center my-5 font-weight-light">
-                Add <span className="text-info">Blog</span>
+                Add <span className="text-info">Certificate</span>
               </h1>
               <div className="row px-3 px-lg-5">
                 <div className="col-12 col-lg-6 px-lg-5">

@@ -11,7 +11,7 @@ function blog() {
         return (
           <div id="blog" className="container text-center my-3" data-aos="fade-up" data-aos-duration="1000">
             <h1 className="font-weight-light">
-              <span className="text-info">Certification Courses </span>
+              <span className="text-info">Certificates & Courses </span>
             </h1>
             {/* <div className="lead">These are some blogs that I have written.</div> */}
             <div className="row my-5 py3">
