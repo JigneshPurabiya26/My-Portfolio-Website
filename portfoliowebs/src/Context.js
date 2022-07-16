@@ -197,7 +197,7 @@ export class Provider extends Component {
         id: 4,
         title: "ML Bootcamp",
         excerpt: "DevTown ML Bootcamp",
-        body: "Certificate Link :- : https://cert.devtown.in.tech/verify/Z1qhc0v",
+        body: "Certificate Link :- https://cert.devtown.in.tech/verify/Z1qhc0v",
         imageUrl: require('././assets/Devtown.png').default,
       },
       {
