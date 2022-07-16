@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams,Link } from 'react-router-dom' //instead of params use "Useparams"
+import { useParams } from 'react-router-dom' //instead of params use "Useparams"
 import { Consumer } from "../Context";
 import ReactMarkdown from "react-markdown"
 import remarkGfm from 'remark-gfm'
@@ -20,7 +20,7 @@ export default function ProjectPage() {
                         {title}
                     </h1>
                     <ReactMarkdown children={body} className="container w-75 font-weight-light-normal text-justify" />
-                    <ReactMarkdown children={link} remarkPlugins={[remarkGfm]} className="container w-75 flex-nowrap font-weight-light-normal"/>
+                    <ReactMarkdown children={link} remarkPlugins={[remarkGfm]} className="container w-75 font-weight-light-normal overflow-hidden"/>
                 </div>
             )
         }}

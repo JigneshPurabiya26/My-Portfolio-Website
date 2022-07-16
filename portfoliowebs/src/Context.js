@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { useHref } from "react-router-dom";
 
 const Context = React.createContext();
 // This is the boiler plate code for setting up context api for any app
@@ -176,42 +175,43 @@ export class Provider extends Component {
         id: 1,
         title: "Machine Learning Course",
         excerpt: "Internshala ML course",
-        body: "body 1",
+        body: "Certificate Link :- https://trainings.internshala.com/s/v/144973/cf69b7e3",
         imageUrl: require('././assets/MLcourses.jpeg').default,
       },
       {
         id: 2,
         title: "Java Course",
         excerpt: "Coding Ninjas Java Course",
-        body: "body 2",
+        body: "Certificate Link :- https://files.codingninjas.in/certi_image60894e08b4375c6eaff84b687dedc5d111c45.jpg",
         imageUrl: require('././assets/Codingninjas.jpeg').default,
       },
       {
         id: 3,
         title: "Regular Expression",
         excerpt: "Coursera RegEx Project",
-        body: "body 3",
+        body: "Certificate Link :- https://coursera.org/share/c7fc2ffad4c919b90016966d0765822d",
+        link: "Course Task link :- https://github.com/JigneshPurabiya26/Regular_Expressions.git",
         imageUrl: require('././assets/RegEx.png').default,
       },
       {
         id: 4,
         title: "ML Bootcamp",
         excerpt: "DevTown ML Bootcamp",
-        body: "body 4",
+        body: "Certificate Link :- : https://cert.devtown.in.tech/verify/Z1qhc0v",
         imageUrl: require('././assets/Devtown.png').default,
       },
       {
         id: 5,
         title: "Full Stack Web Development",
         excerpt: "Unschool Web development course",
-        body: "body 5",
+        body: "Certificate Link :- Course in Progress",
         imageUrl: require("././assets/Full-Stack-Developer.webp").default,
       },
       {
         id: 6,
         title: "MLOps Certification",
         excerpt: "Udemy MLOps Certification",
-        body: "body 6",
+        body: "Certificate Link :- https://udemy-certificate.s3.amazonaws.com/image/UC-7e5dee01-f17b-4643-aec6-b44479204624.jpg?v=1655031450000",
         imageUrl: require("././assets/MLops.png").default,
       },
     ],
