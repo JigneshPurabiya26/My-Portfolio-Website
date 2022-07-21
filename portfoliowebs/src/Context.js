@@ -37,21 +37,21 @@ export class Provider extends Component {
       {
         id: 1,
         name: "HTML5",
-        imageUrl: require("././assets/Other-html-5-icon.png").default,
+        imageUrl: require("././assets/html5.png").default,
         starsTotal: 3,
         starsActive: 3,
       },
       {
         id: 2,
         name: "CSS3",
-        imageUrl: require("././assets/css-37-226088.png").default,
+        imageUrl: require("././assets/css3.png").default,
         starsTotal: 3,
         starsActive: 2,
       },
       {
         id: 3,
         name: "Javascript",
-        imageUrl: require("././assets/js1.webp").default,
+        imageUrl: require("././assets/javascript.png").default,
         starsTotal: 3,
         starsActive: 3,
       },
@@ -65,7 +65,7 @@ export class Provider extends Component {
       {
         id: 5,
         name: "React",
-        imageUrl: require("././assets/react.webp").default,
+        imageUrl: require("././assets/react.png").default,
         starsTotal: 3,
         starsActive: 2,
       },
@@ -79,7 +79,7 @@ export class Provider extends Component {
       {
         id: 7,
         name: "Python",
-        imageUrl: require("././assets/python.webp").default,
+        imageUrl: require("././assets/python.png").default,
         starsTotal: 3,
         starsActive: 2,
       },
