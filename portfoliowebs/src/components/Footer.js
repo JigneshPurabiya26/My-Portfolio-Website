@@ -22,7 +22,7 @@ function Footer() {
               Home
             </Link>
             <a href="/#blog" className="text-light d-block">
-              Blogs
+              Certificates
             </a>
             <a href="/#projects" className="text-light d-block">
               Projects
