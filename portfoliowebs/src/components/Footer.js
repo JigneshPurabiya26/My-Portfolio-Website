@@ -30,9 +30,9 @@ function Footer() {
             <Link to="/contact" className="text-light d-block">
               Contact me
             </Link>
-            <Link to="/recommendation" className="text-light">
+            {/* <Link to="/recommendation" className="text-light">
               Write a recommendation <i className="fas fa-heart"></i>
-            </Link>
+            </Link> */}
           </div>
           <div className="col-12 col-md-4">
             <p className="text-light text-justify pl-3 py-3">
@@ -63,7 +63,7 @@ function Footer() {
               style={{ textDecoration: "none" }}
               target="_blank" rel="noreferrer"
             >
-              <img src={require('../assets/tab.png').default} alt="tableau_logo"  className="w-25"/>
+              <img src={require('../assets/tab.png').default} alt="tableau_logo" className="w-25" />
             </a>
           </div>
         </div>
