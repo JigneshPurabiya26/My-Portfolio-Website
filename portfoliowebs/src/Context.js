@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import axios from "axios";
 
 const Context = React.createContext();
 // This is the boiler plate code for setting up context api for any app
@@ -20,11 +21,11 @@ export class Provider extends Component {
         });
         break;
 
-      case "Add_Recommendation":
-        this.setState({
-          recommendations: [newObject, ...this.state.recommendations],
-        });
-        break;
+      // case "Add_Recommendation":
+      //   this.setState({
+      //     recommendations: [newObject, ...this.state.recommendations],
+      //   });
+      //   break;
 
       default:
         break;
@@ -140,36 +141,36 @@ export class Provider extends Component {
         link:"Github Link :- https://github.com/JigneshPurabiya26/Hotel-Management.git",
       },
     ],
-    recommendations: [
-      {
-        id:1,
-        name:"person's name",
-        company: "company",
-        designation: "persons designation",
-        message: "recommendation",
-      },
-      {
-        id: 2,
-        name: "person's name",
-        company: "company",
-        designation: "persons designation",
-        message: "recommendation",
-      },
-      {
-        id: 3,
-        name: "person's name",
-        company: "company",
-        designation: "persons designation",
-        message: "recommendation",
-      },
-      {
-        id: 4,
-        name: "person's name",
-        company: "company",
-        designation: "persons designation",
-        message: "recommendation",
-      },
-    ],
+    // recommendations: [
+    // `  // {
+    //   //   id:1,
+    //   //   name:"person's name",
+    //   //   company: "company",
+    //   //   designation: "persons designation",
+    //   //   message: "recommendation",
+    //   // },
+    //   // {
+    //   //   id: 2,
+    //   //   name: "person's name",
+    //   //   company: "company",
+    //   //   designation: "persons designation",
+    //   //   message: "recommendation",
+    //   // },
+    //   // {
+    //   //   id: 3,
+    //   //   name: "person's name",
+    //   //   company: "company",
+    //   //   designation: "persons designation",
+    //   //   message: "recommendation",
+    //   // },
+    //   // {
+    //   //   id: 4,
+    //   //   name: "person's name",
+    //   //   company: "company",
+    //   //   designation: "persons designation",
+    //   //   message: "recommendation",
+    //   // },`
+    // ],
     blogs: [
       {
         id: 1,
@@ -219,11 +220,19 @@ export class Provider extends Component {
         title: "Hackathon Certificate",
         excerpt: "Smart India Hackathon (SIH)",
         body: "In the Hackathon our team presented an idea for creating a web based application for predicting and improving employment and admission rates in a particular geographical area click below to checkout the whole idea.",
-        body:"Idea Link:- https://drive.google.com/file/d/1raNr-hnzoML9g9sUlRsUqp5_JB0f38n7/view?usp=sharing",
+        body1:"Idea Link:- https://drive.google.com/file/d/1raNr-hnzoML9g9sUlRsUqp5_JB0f38n7/view?usp=sharing",
         imageUrl: require("././assets/Hackathon.jpeg").default,
       },
     ],
   };
+
+  // async componentDidMount(){
+  //   const response = await axios.get(
+  //     "http://127.0.0.1:9000/api/recommendations"
+  //     );
+  //   this.setState ({recommendations: response.data.results})
+  // }
+
 
   render() {
     return (
