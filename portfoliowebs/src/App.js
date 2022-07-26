@@ -7,11 +7,11 @@ import Blog from "./components/Blog";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Projectsect from "./components/Projectsect";
-import RecommendationSection from "./components/RecommendationSection";
+// import RecommendationSection from "./components/RecommendationSection";
 import SkillSection from "./components/SkillSection";
 import Title from "./components/Title";
 import Contact from "./components/Contact";
-import Writerecommendation from "./components/Writerecommendation";
+// import Writerecommendation from "./components/Writerecommendation";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Notfound from "./components/Notfound";
 import Addproject from "./components/Addproject";
@@ -41,7 +41,7 @@ function App() {
               <Projectsect />,
               <Blog />,
               <SkillSection />,
-              <RecommendationSection />,
+              // <RecommendationSection />,
               <Aboutme />,
             ]}
           />
@@ -50,7 +50,7 @@ function App() {
           <Route path="/allblogs" element={<Allblogs />} />
           <Route path="/blog/:id" element={<BlogPage/>}/>
           <Route path="/contact" element={<Contact />} />
-          <Route path="/recommendation" element={<Writerecommendation />} />
+          {/* <Route path="/recommendation" element={<Writerecommendation />} /> */}
           <Route path="/project/addproject" element={<Addproject />} />
           <Route path="/blog/addblog" element={<Addblog />} />
           <Route path="*" element={<Notfound />} />
