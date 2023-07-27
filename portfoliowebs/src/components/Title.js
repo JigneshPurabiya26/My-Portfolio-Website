@@ -23,7 +23,7 @@ function Title(props) {
           <div className="font-weight-light" style={{fontSize: "50px"}}>
             Hi, I am <span className="text-info">{name}</span>
           </div>
-          <h4 className="font-weight-light">{leadText}</h4>
+          <h4 className="font-weight-light justify">{leadText}</h4>
         </div>
       </div>
     </div>
@@ -33,7 +33,7 @@ function Title(props) {
 //The default props are given so that even if we forget to give the prop value in the props this will pass the values to the props.
 Title.defaultProps= {
   name:"Jignesh Purabiya",
-  leadText:"I am an Engineering student at St.john's College of Engineering and Management."
+  leadText:'Highly motivated and data-driven individual with a passion for working withta, a solid understanding of statistics, and proficiency in several machine learning algorithms. Eager to leverage my skills to tackle realworld challenges through data-driven solutions. A dedicated learner with an inquisitive mindset, seeking opportunities to contribute to impactful data science projects.'
 }
 
 //The PropTypes is used to validate if the value entered in the props is valid or not.

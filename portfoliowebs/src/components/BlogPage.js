@@ -20,6 +20,7 @@ export default function BlogPage() {
           </h1>
           <ReactMarkdown children={body} remarkPlugins={[remarkGfm]} className="container w-75 font-weight-light-normal text-justify overflow-hidden"/>
           <ReactMarkdown children={link} remarkPlugins={[remarkGfm]} className="container w-75 font-weight-light-normal text-justify overflow-hidden"/>
+          {/* <ReactMarkdown children={body1} remarkPlugins={[remarkGfm]} className="container w-75 font-weight-light-normal text-justify overflow-hidden"/> */}
         </div>
       )
     }}
