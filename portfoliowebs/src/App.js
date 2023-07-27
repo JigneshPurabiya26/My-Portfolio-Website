@@ -34,7 +34,7 @@ function App() {
           <Route
             path="/"
             element={[
-              <Title
+              <Title aligh = "Justify"
                 name="Jignesh Purabiya"
                 leadText="Highly motivated and data-driven individual with a passion for working with
                 data, a solid understanding of statistics, and proficiency in several
