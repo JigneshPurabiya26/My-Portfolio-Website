@@ -20,9 +20,9 @@ export default function Allprojects() {
                 </div>
               ))}
             </div>
-            <Link to="/project/addproject" className="ml-auto mx-3">
+            {/* <Link to="/project/addproject" className="ml-auto mx-3">
               <button className="btn btn-outline-info ">Add Project</button>
-            </Link>
+            </Link> */}
           </div>
         );
       }}

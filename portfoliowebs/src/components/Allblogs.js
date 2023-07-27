@@ -20,9 +20,9 @@ export default function Allblogs() {
                 </div>
               ))}
             </div>
-            <Link to="/blog/addblog" className="ml-auto mx-3">
+            {/* <Link to="/blog/addblog" className="ml-auto mx-3">
               <button className="btn btn-outline-info ">Add More</button>
-            </Link>
+            </Link> */}
           </div>
         );
       }}
