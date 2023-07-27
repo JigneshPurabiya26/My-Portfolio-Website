@@ -36,7 +36,12 @@ function App() {
             element={[
               <Title
                 name="Jignesh Purabiya"
-                leadText="I am an Engineering student at St.John's College of Engineering and Management."
+                leadText="Highly motivated and data-driven individual with a passion for working with
+                data, a solid understanding of statistics, and proficiency in several
+                machine learning algorithms. Eager to leverage my skills to tackle realworld challenges through data-driven solutions. A dedicated learner with
+                an inquisitive mindset, seeking opportunities to contribute to impactful
+                data science projects.
+                "
               />,
               <Projectsect />,
               <Blog />,
