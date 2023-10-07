@@ -126,6 +126,22 @@ export class Provider extends Component {
       },
       {
         id: 4,
+        title: "Git Hub Topics Web Scraping",
+        imageUrl: require("././assets/Scrape_topics.png").default,
+        excerpt: "Web Scraping using BeautifulSoup",
+        body: "This is Web Scraping Project where I have scraped the TOPICS Section of github where there are various trending topics and people create and upload their git repos and I have also scraped all the information about all the repos for a particular topic and created a csv file for each topic.",
+        link:"Github Link :- https://github.com/JigneshPurabiya26/Scraping_GitHub_Topics",
+      },
+      {
+        id: 5,
+        title: "Quotes Web Scraping",
+        imageUrl: require("././assets/Scrape_quotes.png").default,
+        excerpt: "Web Scraping using Beautiful Soup",
+        body: "This is Web Scraping Project where I have scraped the top tags for different quotes and also for all the corresponding quotes I scraped all the top quotes along with the author names and stored the quotes corresponding to a tag in separate csv files.",
+        link:"Github Link :- https://github.com/JigneshPurabiya26/Scraping_top_quotes",
+      },
+      {
+        id: 6,
         title: "Rock Vs Mine Prediction",
         imageUrl: require("././assets/Rock_Mine.png").default,
         excerpt: "Rock Vs Mine Prediction using ML",
@@ -133,7 +149,7 @@ export class Provider extends Component {
         link:"Github Link :- https://github.com/JigneshPurabiya26/Rock-vs-Mine-Prediction",
       },
       {
-        id: 5,
+        id: 7,
         title: "Acquisitions Dashboard",
         imageUrl: require("././assets/Acq.png").default,
         excerpt: "Tableau Visualization",
@@ -141,7 +157,7 @@ export class Provider extends Component {
         link:"Tableau Link :- https://public.tableau.com/app/profile/jignesh.purabiya/viz/Aquisitions_16900989485270/Dashboard2",
       },
       {
-        id: 6,
+        id: 8,
         title: "Store Profits Dashboard",
         imageUrl: require("././assets/Store.png").default,
         excerpt: "Tableau Visualization",
@@ -149,7 +165,7 @@ export class Provider extends Component {
         link:"Tableau Link :- https://public.tableau.com/app/profile/jignesh.purabiya/viz/StoreProfits_16901825745410/StoreProfitts_1",
       },
       {
-        id: 7,
+        id: 9,
         title: "Flappy Bird Game",
         imageUrl: require("././assets/flappyBird.png").default,
         excerpt: "Game created using Python",
@@ -157,7 +173,7 @@ export class Provider extends Component {
         link: "Github Link :- https://github.com/JigneshPurabiya26/FlappyBird_Game.git",
       },
       {
-        id: 8,
+        id: 10,
         title: "Multilingual IDE",
         imageUrl: require("././assets/terminal.png").default,
         excerpt: "Online IDE using HTML, CSS, JS & PHP",
@@ -165,7 +181,7 @@ export class Provider extends Component {
         link:"Github Link :- https://github.com/JigneshPurabiya26/Online-Multilingual-IDE.git",
       },
       {
-        id: 9,
+        id: 11,
         title:"Car Parking Sensor",
         imageUrl : require("././assets/car_parking.jpg").default,
         excerpt: "Car Parking Sensor(Ultrasonic Sensor)",
@@ -173,7 +189,7 @@ export class Provider extends Component {
         link:"Github Link :- https://github.com/JigneshPurabiya26/Car_Parking_Sensor.git",
       },  
       {
-        id: 10,
+        id: 12,
         title: "Hotel Management System",
         imageUrl: require("././assets/jdbc.png").default,
         excerpt: "JDBC Connectivity",
