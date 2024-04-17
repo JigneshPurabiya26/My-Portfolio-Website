@@ -15,16 +15,16 @@ function Aboutme() {
         <div className="col-12 col-md-6">
           <h4>How can I help you?</h4>
           <p className="text-justify px-5">
-            As displayed in Technology Stack section I can design and develop a
-            range of websites using the tools mentioned in it, create a variety of machine learning projects, perform Web Scraping using different python libraries and last but not the least I create different visualizations using tools like Tableau.
+            As displayed in Technology Stack section I can create data pipelines using the Pentaho Data Integration Tool,
+            and can perform various types of data analysis using SAS VIYA, Tableau, and Python.
           </p>
         </div>
         <div className="col-12 col-md-6">
           <h4>What am I doing currently?</h4>
           <p className="text-justify px-5">
             I have completed my Bachelor's of Engineering in Information technology from
-            St.John's College of Engineering and Management. And now, I am looking for a 
-            job in the data science domain.
+            St.John's College of Engineering and Management. And now, I am working as a 
+            <b> Data Analyst in the Big Data Department of DCB bank.</b>
           </p>
         </div>
       </div>
