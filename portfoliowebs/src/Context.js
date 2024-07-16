@@ -116,14 +116,6 @@ export class Provider extends Component {
     projects: [
       {
         id: 1,
-        title: "HR ANALYTICS DASHBOARD",
-        imageUrl: require("././assets/hr.png").default,
-        excerpt: "TABLEAU VISUALIZATION",
-        body: "This is an HR Analytics dashboard which provides an overview to the department about their employees, click the link below to checkout the project.",
-        link:"Dashboard Link :- https://public.tableau.com/app/profile/jignesh.purabiya/viz/HR_Analytics_17211330273710/final_dashboard",
-      },
-      {
-        id: 2,
         title: "Health Insurance Cost Prediction",
         imageUrl: require("././assets/Health_Insurance.png").default,
         excerpt: "Health_Insurance cost prediction using ML",
@@ -131,7 +123,7 @@ export class Provider extends Component {
         link:"Github Link :- https://github.com/JigneshPurabiya26/HealthInsurance_Cost-Predition.git",
       },
       {
-        id: 3,
+        id: 2,
         title: "Diabetes Prediction",
         imageUrl: require("././assets/Diabetes_Prediction.png").default,
         excerpt: "Diabetes Prediction using ML",
@@ -139,7 +131,7 @@ export class Provider extends Component {
         link:"Github Link :- https://github.com/JigneshPurabiya26/Diabetes_Prediction",
       },
       {
-        id: 4,
+        id: 3,
         title: "Covid Analysis Dashboard",
         imageUrl: require("././assets/Covid_analysis.png").default,
         excerpt: "Tableau Visualization",
@@ -147,7 +139,7 @@ export class Provider extends Component {
         link:"Dashboard Link :- https://public.tableau.com/app/profile/jignesh.purabiya/viz/BIL_MINIPROJECT/Dashboard1",
       },
       {
-        id: 5,
+        id: 4,
         title: "Git Hub Topics Web Scraping",
         imageUrl: require("././assets/Scrape_topics.png").default,
         excerpt: "Web Scraping using BeautifulSoup",
@@ -155,7 +147,7 @@ export class Provider extends Component {
         link:"Github Link :- https://github.com/JigneshPurabiya26/Scraping_GitHub_Topics",
       },
       {
-        id: 6,
+        id: 5,
         title: "Quotes Web Scraping",
         imageUrl: require("././assets/Scrape_quotes.png").default,
         excerpt: "Web Scraping using Beautiful Soup",
@@ -163,7 +155,7 @@ export class Provider extends Component {
         link:"Github Link :- https://github.com/JigneshPurabiya26/Scraping_top_quotes",
       },
       {
-        id: 7,
+        id: 6,
         title: "Rock Vs Mine Prediction",
         imageUrl: require("././assets/Rock_Mine.png").default,
         excerpt: "Rock Vs Mine Prediction using ML",
@@ -171,7 +163,7 @@ export class Provider extends Component {
         link:"Github Link :- https://github.com/JigneshPurabiya26/Rock-vs-Mine-Prediction",
       },
       {
-        id: 8,
+        id: 7,
         title: "Acquisitions Dashboard",
         imageUrl: require("././assets/Acq.png").default,
         excerpt: "Tableau Visualization",
@@ -179,7 +171,7 @@ export class Provider extends Component {
         link:"Tableau Link :- https://public.tableau.com/app/profile/jignesh.purabiya/viz/Aquisitions_16900989485270/Dashboard2",
       },
       {
-        id: 9,
+        id: 8,
         title: "Store Profits Dashboard",
         imageUrl: require("././assets/Store.png").default,
         excerpt: "Tableau Visualization",
@@ -187,7 +179,7 @@ export class Provider extends Component {
         link:"Tableau Link :- https://public.tableau.com/app/profile/jignesh.purabiya/viz/StoreProfits_16901825745410/StoreProfitts_1",
       },
       {
-        id: 10,
+        id: 9,
         title: "Flappy Bird Game",
         imageUrl: require("././assets/flappyBird.png").default,
         excerpt: "Game created using Python",
@@ -195,7 +187,7 @@ export class Provider extends Component {
         link: "Github Link :- https://github.com/JigneshPurabiya26/FlappyBird_Game.git",
       },
       {
-        id: 11,
+        id: 10,
         title: "Multilingual IDE",
         imageUrl: require("././assets/terminal.png").default,
         excerpt: "Online IDE using HTML, CSS, JS & PHP",
@@ -203,7 +195,7 @@ export class Provider extends Component {
         link:"Github Link :- https://github.com/JigneshPurabiya26/Online-Multilingual-IDE.git",
       },
       {
-        id: 12,
+        id: 11,
         title:"Car Parking Sensor",
         imageUrl : require("././assets/car_parking.jpg").default,
         excerpt: "Car Parking Sensor(Ultrasonic Sensor)",
@@ -211,7 +203,7 @@ export class Provider extends Component {
         link:"Github Link :- https://github.com/JigneshPurabiya26/Car_Parking_Sensor.git",
       },  
       {
-        id: 13,
+        id: 12,
         title: "Hotel Management System",
         imageUrl: require("././assets/jdbc.png").default,
         excerpt: "JDBC Connectivity",
